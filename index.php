@@ -32,7 +32,7 @@ $carLogoMap = [
     'Porsche' => '374_374_Porsche-logo.png',
     'Chevrolet' => '3_3_Chevrolet_Logo.png',
     'MINI' => '658_658_MINI-logo.png',
-    'JEEP' => 'Jeep.png',
+    'JEEP' => 'jeep.png',
     'Aston Martin' => '777_777_Aston-Martin-logo.png',
     'Bentley' => '782_782_Bentley.png',
     'Daewoo' => '788_788_Daewoo-logo.png',
@@ -695,7 +695,11 @@ $allCarMakes = getCarMakes();
                                     ${htmlspecialchars(battery.pro_rata_warranty_months || '0')} Pro Rata)
                                 </p>` : ''
                             }
-                            <p class="price-info">Special Price: ₹${numberFormat(battery.special_price_inr || 0, 2)}</p>
+								
+                            <p class="price-info-mrp">MRP: ₹${numberFormat(battery.price_inr,2)}</p>
+                            <p class="price-info">Special Price: ₹${numberFormat(battery.special_price_inr,2)}</p>
+                            <p class="price-info-with-old-battery">With Old Battery: ₹${numberFormat(battery.price_with_exchange_inr,2)}</p>
+                            <p class="price-info-without-old-battery">Without Old Battery: ₹${numberFormat(battery.price_without_exchange_inr ,2)}</p>
                         </div>
                     `;
                 } else {

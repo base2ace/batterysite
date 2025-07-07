@@ -198,13 +198,32 @@
             color: #3b82f6; /* blue-600 */
             line-height: 1.3;
         }
+
+        .selected-battery-details .details-text .price-info-mrp {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #e34927; /* green-500 */
+            margin-top: 0.5rem;
+        }
+		
         .selected-battery-details .details-text .price-info {
             font-size: 1rem;
-            font-weight: 600;
+            font-weight: 500;
             color: #10b981; /* green-500 */
             margin-top: 0.5rem;
         }
-
+        .selected-battery-details .details-text .price-info-with-old-battery {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #e3a127; /* green-500 */
+            margin-top: 0.5rem;
+        }
+        .selected-battery-details .details-text .price-info-without-old-battery {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #1C415D; /* green-500 */
+            margin-top: 0.5rem;
+        }
 
         /* Dropdown styling */
         select {
