@@ -1,0 +1,8 @@
+/* assets/css/style.css */
+
+/* No custom CSS needed here as Tailwind handles most of the layout and styling.
+   The inline <style> block in index.php now contains the primary layout CSS.
+   You can add any specific overrides or new custom classes here if necessary. */
+
+/* Ensure all elements have rounded corners as per instructions. Tailwind's classes
+   like `rounded-md`, `rounded-lg`, `rounded-xl` are used directly in the HTML. */
