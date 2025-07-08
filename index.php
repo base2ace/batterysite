@@ -75,6 +75,20 @@ $allCarMakes = getCarMakes();
 
 </head>
 <body>
+  <!-- NAVBAR -->
+  <nav class="w-full bg-gray-800 text-white px-6 py-4 flex items-center justify-between">
+    <div class="text-2xl font-bold">
+      <a href="/" class="hover:text-yellow-400">BatterySite</a>
+    </div>
+    <div class="hidden md:flex gap-6 text-lg">
+      <a href="/" class="hover:text-yellow-400">Home</a>
+      <a href="/products.html" class="hover:text-yellow-400">Products</a>
+      <a href="/about.html" class="hover:text-yellow-400">About</a>
+      <a href="/contact.html" class="hover:text-yellow-400">Contact</a>
+    </div>
+    <button id="menu-toggle" class="md:hidden text-3xl">☰</button>
+  </nav>
+
 
     <div class="main-container">
 	
@@ -125,14 +139,19 @@ $allCarMakes = getCarMakes();
             <div id="left-pane-instruction" class="flex flex-col gap-3 flex-grow overflow-y-auto mt-auto pt-4 border-t">
                 <p class="text-center text-gray-600">Use filters above to find batteries or compatible cars.</p>
             </div>
+
+		
+<button id="back-to-makes-btn" onclick="resetRightPaneToCarLogos()"
+  class="mb-4 px-4 py-2 rounded-md shadow transition duration-150 ease-in-out hidden"
+  style="background-color: #819A91; color: white;">
+  ← Back to Car Brands
+</button>
+
+
         </div>
 
         <!-- Right Pane (Initially Car Logos, then Car Models, then Battery Details, or Compatible Cars) -->
         <div class="right-pane">
-            <button id="back-to-makes-btn" onclick="resetRightPaneToCarLogos()"
-                    class="absolute top-6 right-6 px-4 py-2 bg-gray-200 text-gray-800 rounded-md shadow hover:bg-gray-300 transition duration-150 ease-in-out hidden">
-                ← Back to Car Brands
-            </button>
 
             <div id="car-logos-display" class="w-full">
                 <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Popular Car Brands</h2>
